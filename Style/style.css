@@ -78,3 +78,39 @@ body {
 	padding:10px;
 
 }
+
+.anima1 {
+	background-image:url(../imgs/helicoptero.png);
+	animation:play .5s steps(2) infinite;
+
+       -webkit-animation: play .5s steps(2) infinite; /*Prefixo para rodar no Chrome*/
+       -moz-animation: play .5s steps(2) infinite; /*Prefixo para rodar no mozilla firefox*/
+       -ms-animation: play .5s steps(2) infinite; /*Prefixo para rodar no Explore*/
+       -o-animation: play .5s steps(2) infinite; /*Prefixo para rodar no Opera*/
+}
+
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-512px;}
+}
+
+   /* passando Keyframes para todos os navegadores*/
+@-webkit-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+}
+ 
+@-moz-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+}
+ 
+@-ms-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+}
+ 
+@-o-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+}
